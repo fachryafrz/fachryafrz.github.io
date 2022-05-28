@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FachryAfrz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Space+Mono"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
+      <button type="button" class="nav-res">
+        <div class="res-top"></div>
+        <div class="res-mid"></div>
+        <div class="res-bot"></div>
+      </button>
+      <h1 class="nav-logo">AFRZ</h1>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-active home">home.</a></li>
+        <li><a href="#about" class="about">about.</a></li>
+        <li><a href="#skills" class="skills">skills.</a></li>
+        <li><a href="#projects" class="projects">projects.</a></li>
+      </ul>
+      <ul class="nav-socials">
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- ===== -->
+    <section id="home">
+      <img src="./img/Fachry-Matte.jpg" alt="FachryAfrz" class="home-img" />
+      <h1 class="home-header">Fachry D. Afriza</h1>
+      <p class="home-desc">Self Taught, Front-End, Web Developer</p>
+    </section>
+    <!-- ===== -->
+    <section id="about">
+      <div class="about-left">
+        <img src="./img/Fachry-Mocca.jpg" alt="" />
+      </div>
+      <div class="about-right">
+        <h1>About Me</h1>
+        <p>
+          My full name is Fachry Dwi Afriza, you can call me Fachry or Ry.
+          <br /><br />I learned Editing Photos & Videos, Vector illustrations,
+          3D Modeling, Game Development and a little bit of Web Development when
+          I was 14. Then when I was on Senior High School I learned so much
+          about Computer Networking, Cisco Packet Tracer, Configure Mikrotik,
+          etc. Then I went to college learning more depth of Web Programming.
+          But of course they didn't teach me everything, so I studied by myself
+          at home.
+        </p>
+        <div class="about-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== -->
+    <section id="skills">
+      <h1 class="skills-header">What I've learned so far</h1>
+      <p class="skills-desc">
+        I've seperated my skills based on the type of it.
+      </p>
+      <div class="skills-tab">
+        <div class="tab-header">
+          <button class="tab-btn" onclick="openSkills(event, 'developer')">
+            Web Developer
+          </button>
+          <button class="tab-btn" onclick="openSkills(event, 'editor')">
+            Multimedia Editor
+          </button>
+          <button class="tab-btn" onclick="openSkills(event, 'engineer')">
+            Computer & Network Engineer
+          </button>
+          <button
+            class="tab-btn tab-close"
+            onclick="openSkills(event, '')"
+            title="Close Skills Tab"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="tab-body">
+          <div id="developer" class="tab-content">
+            <div class="skill html">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/html5-19-722707.png"
+                alt=""
+              />
+              <p>HTML</p>
+            </div>
+            <div class="skill css">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <p>CSS</p>
+            </div>
+            <div class="skill js">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div id="editor" class="tab-content">
+            <div class="skill ps">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/adobe-photoshop-2522533-2132721.png"
+                alt=""
+              />
+              <p>Photo Editing</p>
+            </div>
+            <div class="skill ai">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/adobe-illustrator-2522532-2132720.png"
+                alt=""
+              />
+              <p>Vector Illustration</p>
+            </div>
+            <div class="skill pr">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/adobe-premiere-pro-2522527-2132715.png"
+                alt=""
+              />
+              <p>Video Editing</p>
+            </div>
+          </div>
+          <div id="engineer" class="tab-content">
+            <div class="skill cisco">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/cisco-282320.png"
+                alt=""
+              />
+              <p>Cisco Packet Tracer</p>
+            </div>
+            <div class="skill mikrotik">
+              <img
+                src="https://designs.mikrotik.com/images/large/mikrotik.png"
+                alt=""
+              />
+              <p>Mikrotik Configuration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== -->
+    <section id="projects">
+      <h1 class="projects-header">Here are my works.</h1>
+      <div class="projects-grid">
+        <div class="project">
+          <a href="https://belgiepropasarminggu.netlify.app" target="_blank">
+            <img
+              class="project-img"
+              src="./img/web-belgipro.png"
+              alt="Belgie Pro Pasar Minggu"
+            />
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://rekrut.netlify.app" target="_blank">
+            <img
+              class="project-img"
+              src="./img/web-rekrut.png"
+              alt="Rekrut - Lowongan Pekerjaan"
+            />
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://turaman.netlify.app" target="_blank">
+            <img
+              class="project-img"
+              src="./img/web-turaman.png"
+              alt="Turaman - #1 Tour & Travel"
+            />
+          </a>
+        </div>
+      </div>
+      <a href="./projects.html" class="projects-all-btn">Go to all my works</a>
+    </section>
+    <!-- ===== -->
+    <section id="contact">
+      <div class="contact-left">
+        <i class="fas fa-paper-plane"></i>
+      </div>
+      <div class="contact-right">
+        <h1>Let's talk</h1>
+        <form action="" netlify>
+          <div class="form-name">
+            <label for="name"><i class="fas fa-user"></i></label>
+            <input type="text" id="name" placeholder="Name..." />
+          </div>
+          <div class="form-email">
+            <label for="email"><i class="fas fa-envelope"></i></label>
+            <input type="email" id="email" placeholder="Email..." />
+          </div>
+          <div class="form-msg">
+            <label for="msg"><i class="fas fa-i-cursor"></i></label>
+            <textarea
+              id="msg"
+              rows="5"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+          <button type="button" class="form-btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
