@@ -1,5 +1,3 @@
-window.location = "https://fachryafrz.vercel.app"
-
 // Nav Responsive
 let nav = document.querySelector(".nav-container");
 let navRes = document.querySelector(".nav-res");
